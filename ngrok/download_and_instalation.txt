@@ -1,0 +1,13 @@
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip
+curl -o 'name_file_output.zip' https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+curl -o 'name_file_output.tgz' https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+unzip ngrok-v3-stable-linux-amd64.zip
+unzip 'name_file_output.zip'
+tar -xvzf ngrok-v3-stable-linux-amd64.tgz
+tar -xvzf 'name_file_output.tgz'
+./ngrok -h
+./ngrok --help
+mv ngrok /usr/local/bin/
+ngrok -h
+ngrok --help
