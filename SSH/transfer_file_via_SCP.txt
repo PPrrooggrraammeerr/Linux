@@ -1,1 +1,1 @@
-scp -o MACs=hmac-sha2-256 -r userprofile@server:/origin_path /destination_path
+scp -P port -o MACs=hmac-sha2-256 -r userprofile@server:/origin_path /destination_path
