@@ -1,0 +1,31 @@
+DOWNLOADING / INSTALLATION AND CONFIGURATION:
+
+CENTOS:
+    yum install cronie
+DEB:
+    apt-get install cron
+
+ACTIVE THE SERVICE:
+
+service cron start or systemctl start cron
+
+EDIT FILE CRON AND SCHEDULE TASK:
+
+crontab -e
+
+FUNCTIONALITY AND EXAMPLE:
+
+    MINUTE: 0 TO 59 OR *
+    HOUR: 0 TO 23 OR *
+    DAY: 1 TO 31 OR *
+    MONTH: 1 TO 12, JAN TO DEC OR *
+    WEEK: 0 TO 6, SUN TO SAT OR * / 0 AND 7 = SUNDAY
+    COMMAND: THE COMMAND TO BE EXECUTED OR SCRIPT
+
+45 11 * * * touch file.txt
+50 10 * * * /usr/bin/php /home/user_profile/file.php
+00 12 * * * mkdir /home/user_profile/text && touch /home/user_profile/text/text.txt
+
+LIST THE TASKS:
+
+crontab -l
